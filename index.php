@@ -74,11 +74,12 @@
 </nav>
 <?php
 $html_9gag = file_get_contents('https://9gag.com/');
-preg_match_all("#<article.*?article>#is", $html_9gag, $articles);
+preg_match_all("#<article.*?article>#is", $html_9gag, $gag_articles_html);
 /*var_export($articles[0]);
 if (isset($articles[0][0])) {
     var_export($articles[0][0]);
 }*/
+$articles = [];
 ?>
 </body>
 </html>
