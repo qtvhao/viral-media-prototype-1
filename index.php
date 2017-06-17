@@ -74,6 +74,7 @@
 </nav>
 <?php
 $html_9gag = file_get_contents('https://9gag.com/');
+preg_match_all("#<article.*?article>#is", $html_9gag, $articles);
 ?>
 </body>
 </html>
