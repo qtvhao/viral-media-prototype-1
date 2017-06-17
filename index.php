@@ -149,11 +149,30 @@ foreach ($gag_articles_html[0] as $gag_article_html){
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-body">
-                modal content
+            <div id="form_new_media">
+                <div class="modal-body">
+                    <form action=""></form>
+                    <form action=""></form>
+                    <form action=""></form>
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <div class="icon">
+                                <span class="glyphicon glyphicon-image"></span>
+                            </div>
+                            <div class="text">
+                                Paste Image URL
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<script>
+    jQuery(function ($) {
+        $('#myModal').modal('show');
+    });
+</script>
 </body>
 </html>
