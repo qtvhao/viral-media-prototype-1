@@ -95,7 +95,6 @@ foreach ($gag_articles_html[0] as $gag_article_html){
         'type' => 'image',
         'media_source' => $article_image_source
     ];
-    break;
 }
 ?>
 <div class="container">
@@ -132,11 +131,6 @@ foreach ($gag_articles_html[0] as $gag_article_html){
                 }
                 ?>
             </div>
-            <?php
-            foreach ($articles as $article){
-
-            }
-            ?>
         </div>
     </div>
 </div>

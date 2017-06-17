@@ -4,6 +4,18 @@ body{
 .top_level_index_php{
   .container{
     max-width:900px;
+    #main_wrap{
+      .articles{
+        article{
+          h4{
+            font-weight:bold;
+          }
+          img{
+            border:1px solid rgba(0,0,0,.1);
+          }
+        }
+      }
+    }
   }
 }
 #navbar {

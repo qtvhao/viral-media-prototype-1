@@ -3,6 +3,10 @@ body {
 
 .top_level_index_php .container {
   max-width: 900px; }
+  .top_level_index_php .container #main_wrap .articles article h4 {
+    font-weight: bold; }
+  .top_level_index_php .container #main_wrap .articles article img {
+    border: 1px solid rgba(0, 0, 0, 0.1); }
 
 #navbar .navbar-brand {
   padding-top: 8px; }
