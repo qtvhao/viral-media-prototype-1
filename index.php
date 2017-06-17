@@ -11,7 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="app.css">
 </head>
-<body>
+<body class="<?php echo $_SERVER['SCRIPT_FILENAME']; ?>">
 <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -100,29 +100,33 @@ foreach ($gag_articles_html[0] as $gag_article_html){
 ?>
 <div class="container">
     <div class="row">
-<?php
-var_export($articles);
-?>
         <div class="col-sm-8">
-
+            <div class="articles">
+                <?php
+                foreach ($articles as $article){
+                    ?>
+                    <article>
+                        <h4><?php echo $article['title']; ?></h4>
+                        <?php
+                        if($article['type'] === 'image'){
+                            ?>
+                            <img src="<?php echo $article['media_source'] ?>" alt="">
+                            <?php
+                        }
+                        ?>
+                    </article>
+                    <?php
+                }
+                ?>
+            </div>
+        </div>
+        <div class="col-sm-4">
             <?php
             foreach ($articles as $article){
-                ?>
-                <article>
-                    <h4><?php echo $article['title']; ?></h4>
-                    <?php
-                    if($article['type'] === 'image'){
-                        ?>
-                        <img src="<?php echo $article['media_source'] ?>" alt="">
-                        <?php
-                    }
-                    ?>
-                </article>
-                <?php
+
             }
             ?>
         </div>
-        <div class="col-sm-4"></div>
     </div>
 </div>
 </body>
