@@ -1,0 +1,28 @@
+#navbar {
+  .navbar-brand {
+    padding-top: 8px;
+  }
+  .user-function {
+    .btn-upload {
+      padding: 5px 23px;
+      margin: 9px;
+      background-color: #09f;
+      color: white;
+      border: #09f;
+      &:hover{
+        background-color: #33adff;
+      }
+    }
+    .avatar-container {
+      padding-top: 0;
+      padding-bottom: 0;
+      img {
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        border: 0;
+        margin: 9px;
+      }
+    }
+  }
+}
