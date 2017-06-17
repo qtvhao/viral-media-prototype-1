@@ -163,7 +163,26 @@ foreach ($gag_articles_html[0] as $gag_article_html){
 </div>
 <script>
     var app = angular.module('viralMedia', []);
-    app.controller('uploadController', function () {
+    app.controller('uploadController', function ($scope) {
+        var scope = $scope;
+        scope.buttons_new_media = [
+            {
+                iconClass:'glyphicon glyphicon-folder-open',
+                text: 'Choose files'
+            },
+            {
+                iconClass:'glyphicon glyphicon-link',
+                text: 'Paste image URL'
+            },
+            {
+                iconClass:'glyphicon glyphicon-play-circle',
+                text: 'Paste Video URL'
+            },
+            {
+                iconClass:'icon-make-meme',
+                text: 'Make meme'
+            }
+        ];
     });
     jQuery(function ($) {
         $('#myModal').modal('show');
