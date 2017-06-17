@@ -157,8 +157,11 @@ foreach ($gag_articles_html[0] as $gag_article_html){
                     <form action=""></form>
                     <div class="buttons_switch_form">
                         <div class="row">
-                            <div class="col-sm-3" ng-repeat="button_new_media in buttons_new_media">
+                            <div class="col-sm-3" ng-repeat="button_new_media in buttons_new_media"
+                                 ng-click="set_current_form(button_new_media)"
+                            >
                                 <div class="button-new-media">
+                                    {{button_new_media.id}}
                                     <div class="icon">
                                         <span class="{{button_new_media.iconClass}}"></span>
                                     </div>
@@ -178,22 +181,30 @@ foreach ($gag_articles_html[0] as $gag_article_html){
         var scope = $scope;
         scope.buttons_new_media = [
             {
+                id:'choose_files',
                 iconClass:'glyphicon glyphicon-folder-open',
                 text: 'Choose files'
             },
             {
+                id:'paste_image_url',
                 iconClass:'glyphicon glyphicon-link',
                 text: 'Paste image URL'
             },
             {
+                id:'paste_video_url',
                 iconClass:'glyphicon glyphicon-play-circle',
                 text: 'Paste Video URL'
             },
             {
+                id:'make_meme',
                 iconClass:'icon-make-meme',
                 text: 'Make meme'
             }
         ];
+        scope.set_current_form = function (form) {
+            scope.current_form_id = form.id;
+        };
+        scope.set_current_form({id:'choose_files'});
     });
     jQuery(function ($) {
         $('#myModal').modal('show');
