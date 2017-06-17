@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.min.js"></script>
     <link rel="stylesheet" href="app.css">
 </head>
-<body class="top_level_index_php">
+<body class="top_level_index_php" ng-app="viralMedia">
 <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -149,27 +150,21 @@ foreach ($gag_articles_html[0] as $gag_article_html){
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div id="form_new_media">
+            <div id="form_new_media" ng-controller="uploadController">
                 <div class="modal-body">
                     <form action=""></form>
                     <form action=""></form>
                     <form action=""></form>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            <div class="icon">
-                                <span class="glyphicon glyphicon-image"></span>
-                            </div>
-                            <div class="text">
-                                Paste Image URL
-                            </div>
-                        </div>
-                    </div>
+                    <div class="row"></div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <script>
+    var app = angular.module('viralMedia', []);
+    app.controller('uploadController', function () {
+    });
     jQuery(function ($) {
         $('#myModal').modal('show');
     });
