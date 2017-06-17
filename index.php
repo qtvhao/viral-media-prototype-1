@@ -11,7 +11,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="app.css">
 </head>
-<body class="<?php echo $_SERVER['SCRIPT_FILENAME']; ?>">
+<body class="top_level_index_php">
 <nav class="navbar navbar-inverse navbar-fixed-top" id="navbar">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
