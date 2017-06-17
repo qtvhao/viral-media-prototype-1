@@ -104,12 +104,19 @@ foreach ($gag_articles_html[0] as $gag_article_html){
 var_export($articles);
 ?>
         <div class="col-sm-8">
+
             <?php
             foreach ($articles as $article){
                 ?>
                 <article>
                     <h4><?php echo $article['title']; ?></h4>
-
+                    <?php
+                    if($article['type'] === 'image'){
+                        ?>
+                        <img src="<?php echo $article['media_source'] ?>" alt="">
+                        <?php
+                    }
+                    ?>
                 </article>
                 <?php
             }
