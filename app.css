@@ -12,13 +12,19 @@ body {
 #navbar .navbar-brand {
   padding-top: 8px; }
 #navbar .user-function .btn-upload {
-  padding: 5px 23px;
+  padding: 5px 11px;
   margin: 9px;
   background-color: #09f;
   color: white;
   border: #09f; }
   #navbar .user-function .btn-upload:hover {
     background-color: #33adff; }
+  #navbar .user-function .btn-upload .icon-plus {
+    font-size: 24px;
+    vertical-align: middle;
+    margin-right: 7px; }
+  #navbar .user-function .btn-upload .text-upload {
+    font-weight: bold; }
 #navbar .user-function .avatar-container {
   padding-top: 0;
   padding-bottom: 0; }

@@ -67,7 +67,12 @@
                         <li><a href="#">Separated link</a></li>
                     </ul>
                 </li>
-                <li><a href="#" class="btn btn-default btn-upload">+ Upload</a></li>
+                <li>
+                    <a href="#" class="btn btn-default btn-upload">
+                        <span class="icon-plus">+</span>
+                        <span class="text-upload">Upload</span>
+                    </a>
+                </li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->

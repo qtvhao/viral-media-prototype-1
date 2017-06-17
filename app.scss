@@ -25,13 +25,21 @@ body{
   }
   .user-function {
     .btn-upload {
-      padding: 5px 23px;
+      padding: 5px 11px;
       margin: 9px;
       background-color: #09f;
       color: white;
       border: #09f;
       &:hover{
         background-color: #33adff;
+      }
+      .icon-plus{
+        font-size: 24px;
+        vertical-align: middle;
+        margin-right: 7px;
+      }
+      .text-upload{
+        font-weight:bold;
       }
     }
     .avatar-container {
