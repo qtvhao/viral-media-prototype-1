@@ -83,6 +83,9 @@ $articles = [];
 foreach ($gag_articles_html[0] as $gag_article_html){
     //echo $gag_article_html;
     preg_match("#<img.*?>#is",$gag_article_html , $gag_image_html);
+//    echo $gag_image_html[0];
+    preg_match("#alt=\"(.*?)\"#is", $gag_image_html[0], $article_title_array);
+    preg_match("#src=\"(.*?)\"#is", $gag_image_html[0], $article_image_source_array);
     break;
 }
 ?>
