@@ -4,6 +4,23 @@ body{
 .top_level_index_php{
   .container{
     max-width:900px;
+    #sidebar_wrap{
+      .featured_items{
+        .featured_item_wrap{
+          .image_wrap{
+            height:100px;
+            width:300px;
+            overflow: hidden;
+            img{
+              max-width: 100%;
+            }
+          }
+          .title{
+
+          }
+        }
+      }
+    }
     #main_wrap{
       .articles{
         article{

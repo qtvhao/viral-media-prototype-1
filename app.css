@@ -3,6 +3,12 @@ body {
 
 .top_level_index_php .container {
   max-width: 900px; }
+  .top_level_index_php .container #sidebar_wrap .featured_items .featured_item_wrap .image_wrap {
+    height: 100px;
+    width: 300px;
+    overflow: hidden; }
+    .top_level_index_php .container #sidebar_wrap .featured_items .featured_item_wrap .image_wrap img {
+      max-width: 100%; }
   .top_level_index_php .container #main_wrap .articles article h4 {
     font-weight: bold; }
   .top_level_index_php .container #main_wrap .articles article img {
