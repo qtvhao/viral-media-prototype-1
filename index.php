@@ -72,5 +72,8 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
+<?php
+$html_9gag = file_get_contents('https://9gag.com/');
+?>
 </body>
 </html>
