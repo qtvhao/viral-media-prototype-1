@@ -151,6 +151,9 @@ foreach ($gag_articles_html[0] as $gag_article_html){
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div id="form_new_media" ng-controller="uploadController">
+                <div class="" style="padding:20px;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
                 <div class="modal-body">
                     <div class="buttons_switch_form">
                         <div class="row">
@@ -220,6 +223,11 @@ foreach ($gag_articles_html[0] as $gag_article_html){
             }
         ];
         scope.set_current_form = function (form) {
+            if(form.id === 'make_meme'){
+                window.open('http://memeful.com/generator','_blank');
+                scope.set_current_form(scope.buttons_new_media[0]);
+                return;
+            }
             scope.current_form_id = form.id;
             scope.current_form = form;
         };
