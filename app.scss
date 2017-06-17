@@ -77,10 +77,24 @@ body{
   }
 }
 #form_new_media{
+  .modal-body{
+    padding:27px;
+    form{
+      padding:20px 0;
+    }
+  }
+  .btn-info{
+    background: $brand_info;
+  }
   .buttons_switch_form{
+    .col-sm-3{
+      padding-right:7px;
+      padding-left:7px;
+    }
     .button-new-media{
       border:1px solid $color_grey_very_light;
       height:120px;
+      cursor: pointer;
       &.active{
         background: $color_grey_very_light;
         color: $brand_info;

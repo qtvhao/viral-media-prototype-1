@@ -46,9 +46,19 @@ body {
     border: 0;
     margin: 9px 0; }
 
+#form_new_media .modal-body {
+  padding: 27px; }
+  #form_new_media .modal-body form {
+    padding: 20px 0; }
+#form_new_media .btn-info {
+  background: #09f; }
+#form_new_media .buttons_switch_form .col-sm-3 {
+  padding-right: 7px;
+  padding-left: 7px; }
 #form_new_media .buttons_switch_form .button-new-media {
   border: 1px solid rgba(0, 0, 0, 0.1);
-  height: 120px; }
+  height: 120px;
+  cursor: pointer; }
   #form_new_media .buttons_switch_form .button-new-media.active {
     background: rgba(0, 0, 0, 0.1);
     color: #09f; }

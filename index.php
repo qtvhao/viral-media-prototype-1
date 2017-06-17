@@ -152,13 +152,14 @@ foreach ($gag_articles_html[0] as $gag_article_html){
         <div class="modal-content">
             <div id="form_new_media" ng-controller="uploadController">
                 <div class="modal-body">
-                    {{current_form_id}}
                     <div class="buttons_switch_form">
                         <div class="row">
                             <div class="col-sm-3" ng-repeat="button_new_media in buttons_new_media"
                                  ng-click="set_current_form(button_new_media)"
                             >
-                                <div class="button-new-media">
+                                <div class="button-new-media"
+                                     ng-class="{active:(button_new_media.id == current_form_id)}"
+                                >
                                     <div class="icon">
                                         <span class="{{button_new_media.iconClass}}"></span>
                                     </div>
@@ -167,6 +168,26 @@ foreach ($gag_articles_html[0] as $gag_article_html){
                             </div>
                         </div>
                     </div>
+                    <h4> {{current_form.text}}</h4>
+                    <form ng-show="current_form_id=='choose_files'" action="" class="form-inline">
+                        <div class="form-group">
+                            <input type="file" title="" multiple class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-info">Upload</button>
+                    </form>
+                    <form ng-show="current_form_id=='paste_image_url'" action="" class="form-inline">
+                        <div class="form-group">
+                            <input placeholder="http://" title="" type="text" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-info">Next</button>
+                    </form>
+                    <form ng-show="current_form_id=='paste_video_url'" action="" class="form-inline">
+                        <div class="form-group">
+                            <input placeholder="http://" title="" type="text" class="form-control">
+                        </div>
+                        <button type="submit" class="btn btn-info">Next</button>
+                    </form>
+
                 </div>
             </div>
         </div>
@@ -200,8 +221,9 @@ foreach ($gag_articles_html[0] as $gag_article_html){
         ];
         scope.set_current_form = function (form) {
             scope.current_form_id = form.id;
+            scope.current_form = form;
         };
-        scope.set_current_form({id:'choose_files'});
+        scope.set_current_form(scope.buttons_new_media[0]);
     });
     jQuery(function ($) {
         $('#myModal').modal('show');
