@@ -92,9 +92,8 @@ foreach ($gag_articles_html[0] as $gag_article_html){
     $article_image_source = $article_image_source_array[1];
     $articles[] = [
         'title' => $article_title,
-        'image' => [
-            'source' => $article_image_source
-        ]
+        'type' => 'image',
+        'media_source' => $article_image_source
     ];
     break;
 }
@@ -104,6 +103,19 @@ foreach ($gag_articles_html[0] as $gag_article_html){
 <?php
 var_export($articles);
 ?>
+        <div class="col-sm-8">
+            <?php
+            foreach ($articles as $article){
+                ?>
+                <article>
+                    <h4><?php echo $article['title']; ?></h4>
+
+                </article>
+                <?php
+            }
+            ?>
+        </div>
+        <div class="col-sm-4"></div>
     </div>
 </div>
 </body>
