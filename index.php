@@ -155,7 +155,18 @@ foreach ($gag_articles_html[0] as $gag_article_html){
                     <form action=""></form>
                     <form action=""></form>
                     <form action=""></form>
-                    <div class="row"></div>
+                    <div class="buttons_switch_form">
+                        <div class="row">
+                            <div class="col-sm-3" ng-repeat="button_new_media in buttons_new_media">
+                                <div class="button-new-media">
+                                    <div class="icon">
+                                        <span class="{{button_new_media.iconClass}}"></span>
+                                    </div>
+                                    <div class="text">{{button_new_media.text}}</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

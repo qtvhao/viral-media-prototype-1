@@ -46,4 +46,25 @@ body {
     border: 0;
     margin: 9px 0; }
 
+#form_new_media .buttons_switch_form .button-new-media {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  height: 120px; }
+  #form_new_media .buttons_switch_form .button-new-media.active {
+    background: rgba(0, 0, 0, 0.1);
+    color: #09f; }
+  #form_new_media .buttons_switch_form .button-new-media .icon {
+    text-align: center;
+    padding-top: 32px;
+    padding-bottom: 7px; }
+    #form_new_media .buttons_switch_form .button-new-media .icon .icon-make-meme {
+      background: url(img/sprite-upload.png) -172px 0 no-repeat;
+      background-size: 224px 82px;
+      width: 52px;
+      height: 42px;
+      display: inline-block; }
+    #form_new_media .buttons_switch_form .button-new-media .icon .glyphicon {
+      font-size: 45px; }
+  #form_new_media .buttons_switch_form .button-new-media .text {
+    text-align: center; }
+
 /*# sourceMappingURL=app.css.map */

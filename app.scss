@@ -1,3 +1,5 @@
+$color_grey_very_light: rgba(0,0,0,.1);
+$brand_info: #09f;
 body{
   margin-top: 55px;
 }
@@ -12,7 +14,7 @@ body{
             height:100px;
             width:300px;
             overflow: hidden;
-            border:1px solid rgba(0,0,0,.1);
+            border:1px solid $color_grey_very_light;
             img{
               max-width: 100%;
             }
@@ -31,7 +33,7 @@ body{
           }
           img{
             width:500px;
-            border:1px solid rgba(0,0,0,.1);
+            border:1px solid $color_grey_very_light;
           }
         }
       }
@@ -46,9 +48,9 @@ body{
     .btn-upload {
       padding: 5px 11px;
       margin: 9px;
-      background-color: #09f;
+      background-color: $brand_info;
       color: white;
-      border: #09f;
+      border: $brand_info;
       &:hover{
         background-color: #33adff;
       }
@@ -70,6 +72,36 @@ body{
         display: inline-block;
         border: 0;
         margin: 9px 0;
+      }
+    }
+  }
+}
+#form_new_media{
+  .buttons_switch_form{
+    .button-new-media{
+      border:1px solid $color_grey_very_light;
+      height:120px;
+      &.active{
+        background: $color_grey_very_light;
+        color: $brand_info;
+      }
+      .icon{
+        text-align: center;
+        padding-top: 32px;
+        padding-bottom: 7px;
+        .icon-make-meme{
+          background: url(img/sprite-upload.png) -172px 0 no-repeat;
+          background-size: 224px 82px;
+          width: 52px;
+          height: 42px;
+          display:inline-block;
+        }
+        .glyphicon{
+          font-size:45px;
+        }
+      }
+      .text{
+        text-align: center;
       }
     }
   }
