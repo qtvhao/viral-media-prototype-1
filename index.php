@@ -233,9 +233,9 @@ foreach ($gag_articles_html[0] as $gag_article_html){
         };
         scope.set_current_form(scope.buttons_new_media[0]);
     });
-    jQuery(function ($) {
-        $('#myModal').modal('show');
-    });
+//    jQuery(function ($) {
+//        $('#myModal').modal('show');
+//    });
 </script>
 </body>
 </html>
