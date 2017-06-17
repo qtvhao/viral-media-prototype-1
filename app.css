@@ -26,13 +26,13 @@ body {
   #navbar .user-function .btn-upload .text-upload {
     font-weight: bold; }
 #navbar .user-function .avatar-container {
-  padding-top: 0;
-  padding-bottom: 0; }
+  padding: 0; }
   #navbar .user-function .avatar-container img {
+    border-radius: 2px;
     width: 30px;
     height: 30px;
     display: inline-block;
     border: 0;
-    margin: 9px; }
+    margin: 9px 0; }
 
 /*# sourceMappingURL=app.css.map */
