@@ -98,7 +98,13 @@ foreach ($gag_articles_html[0] as $gag_article_html){
     ];
     break;
 }
+?>
+<div class="container">
+    <div class="row">
+<?php
 var_export($articles);
 ?>
+    </div>
+</div>
 </body>
 </html>

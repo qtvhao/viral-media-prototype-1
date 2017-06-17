@@ -1,3 +1,6 @@
+body {
+  margin-top: 55px; }
+
 #navbar .navbar-brand {
   padding-top: 8px; }
 #navbar .user-function .btn-upload {
