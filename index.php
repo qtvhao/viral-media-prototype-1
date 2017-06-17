@@ -68,7 +68,8 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="#" class="btn btn-default btn-upload">
+                    <!-- Button trigger modal -->
+                    <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-default btn-upload">
                         <span class="icon-plus">+</span>
                         <span class="text-upload">Upload</span>
                     </a>
@@ -140,6 +141,16 @@ foreach ($gag_articles_html[0] as $gag_article_html){
                     <?php
                 }
                 ?>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                modal content
             </div>
         </div>
     </div>
