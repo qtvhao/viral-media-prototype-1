@@ -152,16 +152,13 @@ foreach ($gag_articles_html[0] as $gag_article_html){
         <div class="modal-content">
             <div id="form_new_media" ng-controller="uploadController">
                 <div class="modal-body">
-                    <form action=""></form>
-                    <form action=""></form>
-                    <form action=""></form>
+                    {{current_form_id}}
                     <div class="buttons_switch_form">
                         <div class="row">
                             <div class="col-sm-3" ng-repeat="button_new_media in buttons_new_media"
                                  ng-click="set_current_form(button_new_media)"
                             >
                                 <div class="button-new-media">
-                                    {{button_new_media.id}}
                                     <div class="icon">
                                         <span class="{{button_new_media.iconClass}}"></span>
                                     </div>
