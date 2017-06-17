@@ -80,6 +80,11 @@ if (isset($articles[0][0])) {
     var_export($articles[0][0]);
 }*/
 $articles = [];
+foreach ($gag_articles_html[0] as $gag_article_html){
+    //echo $gag_article_html;
+    preg_match("#<img.*?>#is",$gag_article_html , $gag_image_html);
+    break;
+}
 ?>
 </body>
 </html>
