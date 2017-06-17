@@ -130,12 +130,12 @@ foreach ($gag_articles_html[0] as $gag_article_html){
                 foreach ($articles as $article){
                     ?>
                     <div class="featured_item_wrap">
-                        <span class="title">
-                            <?php echo $article['title']; ?>
-                        </span>
                         <?php echo "<div class='image_wrap'>
 <img src='$article[media_source]'>
 </div>"; ?>
+                        <span class="title">
+                            <?php echo "<a href='#'>$article[title]</a>"; ?>
+                        </span>
                     </div>
                     <?php
                 }

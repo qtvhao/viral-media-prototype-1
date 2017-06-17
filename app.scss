@@ -7,16 +7,18 @@ body{
     #sidebar_wrap{
       .featured_items{
         .featured_item_wrap{
+          margin-bottom:16px;
           .image_wrap{
             height:100px;
             width:300px;
             overflow: hidden;
+            border:1px solid rgba(0,0,0,.1);
             img{
               max-width: 100%;
             }
           }
           .title{
-
+            font-weight:bold;
           }
         }
       }
