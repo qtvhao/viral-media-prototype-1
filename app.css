@@ -6,6 +6,7 @@ body {
   .top_level_index_php .container #main_wrap .articles article h4 {
     font-weight: bold; }
   .top_level_index_php .container #main_wrap .articles article img {
+    width: 500px;
     border: 1px solid rgba(0, 0, 0, 0.1); }
 
 #navbar .navbar-brand {
