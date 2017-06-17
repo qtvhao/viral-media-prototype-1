@@ -100,7 +100,7 @@ foreach ($gag_articles_html[0] as $gag_article_html){
 ?>
 <div class="container">
     <div class="row">
-        <div class="col-sm-8">
+        <div class="col-sm-8" id="main_wrap">
             <div class="articles">
                 <?php
                 foreach ($articles as $article){
@@ -120,7 +120,18 @@ foreach ($gag_articles_html[0] as $gag_article_html){
                 ?>
             </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-sm-4" id="sidebar_wrap">
+            <div class="featured_items">
+                <?php
+                foreach ($articles as $article){
+                    ?>
+                    <div class="featured_item_wrap">
+
+                    </div>
+                    <?php
+                }
+                ?>
+            </div>
             <?php
             foreach ($articles as $article){
 
